@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+body { @apply bg-slate-50 text-slate-900; }
+.card { @apply bg-white shadow rounded-lg p-4; }
+.btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-md font-medium; }
