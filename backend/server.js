@@ -10,7 +10,14 @@ const MONGO_URI = process.env.MONGO_URI;
 
 connectDB(MONGO_URI);
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://candidate-referral-azure.vercel.app"
+  ],
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/auth'));
