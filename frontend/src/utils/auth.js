@@ -6,7 +6,7 @@ export const saveAuth = (token, user) => {
   export const logout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
-    window.location.href = '/refer';
+    window.location.href = '/';
   };
   
   export const getUser = () => {
